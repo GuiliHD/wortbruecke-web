@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <!-- Wortbrücke-Symbol, vereinfacht aus app/tools/make-icons.js (Stil Papier & Tinte). Hell/dunkel folgt dem System. -->
+  <style>
+    .bg{fill:#F6F0E1}.ink{fill:#1F2A44}.st{stroke:#1F2A44}.sheet{fill:#FFFBF2}.on{fill:#FFFBF2}.gr{stroke:#2F6B3F}
+    @media (prefers-color-scheme:dark){.bg{fill:#191B22}.ink{fill:#ECE5D3}.st{stroke:#ECE5D3}.sheet{fill:#23262F}.on{fill:#191B22}.gr{stroke:#8FCB9C}}
+  </style>
+  <rect class="bg" width="1000" height="1000" rx="180"/>
+  <path class="st" d="M150 462 Q500 60 850 462" fill="none" stroke-width="40" stroke-linecap="round"/>
+  <path class="gr" d="M430 455 L580 455" fill="none" stroke-width="22" stroke-dasharray="34 22" stroke-linecap="round"/>
+  <rect class="ink" x="130" y="445" width="320" height="390" rx="20"/>
+  <text class="on" x="290" y="735" font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="290" text-anchor="middle">W</text>
+  <rect class="sheet st" x="565" y="460" width="290" height="360" rx="14" stroke-width="22"/>
+  <text class="ink" x="710" y="735" font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="290" text-anchor="middle">B</text>
+  <path class="st" d="M120 900 H880" stroke-width="20"/>
+</svg>
