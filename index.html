@@ -8,7 +8,7 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#F6F0E1" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#191B22" media="(prefers-color-scheme: dark)">
-<title>Wortbrücke – Das Wortketten-Spiel für das iPhone</title>
+<title>Wortbrücke – Wortketten-Spiel und Tagesrätsel für das iPhone</title>
 <meta name="description" content="Baue deine Kette aus deutschen Wörtern: Jedes Wort ist ein Level. Dazu jeden Tag ein Tagesrätsel. Ruhig, ohne Anmeldung, auch offline. Kostenlos für das iPhone.">
 <link rel="canonical" href="https://wortbruecke.com/">
 
@@ -31,6 +31,42 @@
 <link rel="preload" href="/fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
 <script src="/script.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://wortbruecke.com/#website",
+      "url": "https://wortbruecke.com/",
+      "name": "Wortbrücke",
+      "inLanguage": "de-DE"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://wortbruecke.com/#app",
+      "name": "Wortbrücke",
+      "url": "https://wortbruecke.com/",
+      "description": "Wortketten-Spiel für das iPhone: Baue deine Kette aus deutschen zusammengesetzten Wörtern, Level für Level, dazu jeden Tag ein Tagesrätsel. Ohne Anmeldung, auch offline.",
+      "applicationCategory": "GameApplication",
+      "applicationSubCategory": "Wortspiel",
+      "operatingSystem": "iOS",
+      "inLanguage": "de",
+      "image": "https://wortbruecke.com/bilder/icon-512.png",
+      "screenshot": [
+        "https://wortbruecke.com/screenshots/01-start.png",
+        "https://wortbruecke.com/screenshots/02-spiel.png",
+        "https://wortbruecke.com/screenshots/03-ergebnis.png"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
@@ -88,7 +124,7 @@
   <ol class="schritte">
     <li><span class="nr" aria-hidden="true">1</span><h3>Lücke ansehen</h3><p>Die Kästchen zeigen, wie lang das Wort ist. Der erste Buchstabe ist geschenkt.</p></li>
     <li><span class="nr" aria-hidden="true">2</span><h3>Wort eintippen</h3><p>Auf der Spieltastatur mit Ä, Ö, Ü und ß – dann „Prüfen“. Falsche Versuche kosten nichts.</p></li>
-    <li><span class="nr" aria-hidden="true">3</span><h3>Level für Level weiter</h3><p>Hängst du fest, deckt ein Tipp einen Buchstaben auf, oder du tauschst das Wort. Alle 20 Level gibt es am Rastplatz Nachschub.</p></li>
+    <li><span class="nr" aria-hidden="true">3</span><h3>Level für Level weiter</h3><p>Hängst du fest, tauschst du das Wort oder nimmst einen Tipp, der einen Buchstaben aufdeckt. Alle 20 Level gibt es am Rastplatz Nachschub.</p></li>
   </ol>
 
   <div class="probe" id="probe" aria-labelledby="probe-titel">
@@ -166,7 +202,7 @@
     <li class="funktion">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/></svg>
       <h3>Deine Kette</h3>
-      <p>Über „Spielen“ wächst deine Kette immer weiter, jedes Wort ist ein Level. Es helfen Tipp, Wort tauschen und Extra-Tipp per Video. Alle 20 Level wartet ein Rastplatz mit Nachschub.</p>
+      <p>Über „Spielen“ wächst deine Kette immer weiter, jedes Wort ist ein Level. Zum Start hast du 3 Tipps und 1 Tausch. Ist der Vorrat leer, gibt es Nachschub per Video. Alle 20 Level wartet ein Rastplatz mit Nachschub.</p>
     </li>
     <li class="funktion">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l7 3v5.5c0 4.5-3 8-7 9.5-4-1.5-7-5-7-9.5V6z"/><path d="M9 12l2 2 4-4"/></svg>
@@ -186,7 +222,7 @@
     <li class="funktion">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg>
       <h3>Werbefrei für 3,99 €</h3>
-      <p>Einmal kaufen, für immer werbefrei. Extra-Tipp und Wochen-Schild gibt es dann ohne Video, dazu weitere Papier-Farben.</p>
+      <p>Einmal kaufen, für immer werbefrei. Extra-Tipp, Tausch und Wochen-Schild gibt es dann ohne Video, dazu weitere Papier-Farben.</p>
     </li>
   </ul>
 
@@ -247,7 +283,7 @@
     </details>
     <details>
       <summary>Wie viel Werbung gibt es?</summary>
-      <p>Wenig: keine Banner und nie Werbung mitten in einem Wort oder Rätsel. In den ersten Tagen gibt es gar keine. Danach höchstens einmal am Tag nach dem Tagesrätsel eine Vollbild-Werbung, im Archiv höchstens nach jedem dritten gelösten Rätsel und in deiner Kette nur am Rastplatz, also höchstens alle 20 Level. Videos für einen Extra-Tipp schaust du nur, wenn du möchtest.</p>
+      <p>Wenig: keine Banner und nie Werbung mitten in einem Wort oder Rätsel. In den ersten Tagen gibt es gar keine. Danach höchstens einmal am Tag nach dem Tagesrätsel eine Vollbild-Werbung, im Archiv höchstens nach jedem dritten gelösten Rätsel und in deiner Kette nur am Rastplatz, also höchstens alle 20 Level. Videos für einen Extra-Tipp oder ein anderes Wort schaust du nur, wenn du möchtest.</p>
     </details>
     <details>
       <summary>Ein Wort sollte zählen, wird aber nicht angenommen?</summary>
