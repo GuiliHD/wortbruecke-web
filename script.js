@@ -1,7 +1,7 @@
 /* Wortbrücke – kleine Helfer für die Webseite. Kein Tracking, keine Netzwerkanfragen, keine Speicherung.
    1) Ersatzbild, falls ein Screenshot fehlt
    2) App-Store-Knopf zeigt „Bald im App Store“, solange der Platzhalter [APPSTORE_URL] drinsteht
-   3) Mini-Rätsel „Probier es aus“ */
+   3) Mini-Rätsel „Probier es aus“ (ohne Tipps, wie das Tagesrätsel) */
 (function () {
   'use strict';
 
@@ -28,9 +28,7 @@
   var form = document.getElementById('kette');
   if (!form) return;
   var meldung = document.getElementById('probe-meldung');
-  var tippKnopf = document.getElementById('probe-tipp');
   var reihen = Array.prototype.slice.call(form.querySelectorAll('.reihe.offen'));
-  var tippsUebrig = 3;
   var fehler = 0;
 
   function felder(reihe) { return Array.prototype.slice.call(reihe.querySelectorAll('input.k')); }
@@ -42,10 +40,6 @@
   function sag(text, art) {
     meldung.textContent = text;
     meldung.className = 'meldung' + (art ? ' ' + art : '');
-  }
-  function tippText() {
-    tippKnopf.lastChild.textContent = tippsUebrig > 0 ? ' Tipp (' + tippsUebrig + ')' : ' Keine Tipps';
-    tippKnopf.disabled = tippsUebrig === 0 || alleFelder().length === 0;
   }
 
   reihen.forEach(function (reihe) {
@@ -105,27 +99,6 @@
     } else if (unvollstaendig) {
       sag('Füll erst alle Kästchen einer Lücke aus.', '');
     }
-    tippText();
-  });
-
-  tippKnopf.addEventListener('click', function () {
-    if (tippsUebrig === 0) return;
-    var r = reihen.filter(function (x) { return !x.classList.contains('geloest'); })[0];
-    if (!r) return;
-    var loesung = r.dataset.loesung.slice(1).split('');
-    var f = felder(r);
-    for (var i = 0; i < f.length; i++) {
-      if (f[i].readOnly) continue;
-      if (f[i].value !== loesung[i]) {
-        f[i].value = loesung[i]; f[i].readOnly = true; f[i].classList.add('tipp', 'voll');
-        tippsUebrig--;
-        sag('Ein Buchstabe ist aufgedeckt.', '');
-        var weiter = f.filter(function (x) { return !x.readOnly; })[0];
-        if (weiter) weiter.focus();
-        break;
-      }
-    }
-    tippText();
   });
 
   function markiereVerbindungen() {
@@ -143,5 +116,4 @@
   }
 
   form.classList.add('aktiv');
-  tippText();
 })();
