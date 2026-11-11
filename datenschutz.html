@@ -69,7 +69,7 @@
   <li>Spielstand, Serie, Statistik, Kalender, Urkunden und Einstellungen werden <strong>nur auf Ihrem iPhone</strong> gespeichert. Wir erhalten diese Daten nicht.</li>
   <li>Erinnerungen sind <strong>lokale Mitteilungen</strong>, die Ihr iPhone selbst plant. Es gibt keinen Mitteilungsserver.</li>
   <li>Die App zeigt Werbung von <strong>Google AdMob</strong>. Dabei werden Daten an Google übertragen. Ob die Werbung personalisiert wird, entscheiden Sie selbst im Einwilligungsdialog und in der iOS-Abfrage „App-Tracking“.</li>
-  <li>Wer den Einmalkauf <strong>„Werbefrei“</strong> besitzt, bekommt keine Werbung; das Werbemodul von Google wird dann gar nicht gestartet.</li>
+  <li>Wer den Einmalkauf <strong>„Werbefrei“</strong> besitzt, bekommt keine Vollbild-Werbung. Das Werbemodul von Google startet dann nur, wenn Sie freiwillig ein Video für einen Tipp ansehen möchten (Abschnitt 5.8).</li>
   <li>Käufe wickelt <strong>Apple</strong> ab. Wir erhalten keine Zahlungsdaten.</li>
 </ul>
 
@@ -86,11 +86,12 @@
 <h2 id="geraet">3. Speicherung auf Ihrem Gerät</h2>
 <p>Die App speichert auf Ihrem iPhone, und nur dort:</p>
 <ul>
-  <li>Spielstand laufender Rätsel (Tagesrätsel und Archiv) und Ihrer Kette (aktuelles Level), gelöste und verpasste Rätsel, Serie, Serien-Schilde, Statistik, Kalender und Urkunden,</li>
+  <li>Spielstand laufender Rätsel (Tagesrätsel und Archiv) und Ihrer Kette (aktuelles Level), Ergebnisse gespielter Rätsel (gelöst oder nicht gelöst), mit einem Serien-Schild überbrückte Tage, Serie, Serien-Schilde, Statistik, Kalender und Urkunden,</li>
   <li>welche Wörter Sie in Ihrer Kette gefunden und welche Stempel Sie gesammelt haben (für Stempelheft und Statistik und damit sich Wörter nicht zu schnell wiederholen),</li>
   <li>Ihre Einstellungen (z. B. Farbmodus, Papier-Farbe, Vibration, Uhrzeit der Erinnerung),</li>
   <li>ob Sie „Werbefrei“ gekauft haben (zusätzlich fragt die App den Kaufstatus bei Apple ab, siehe Abschnitt 6),</li>
-  <li>Zähler für die Werbe-Häufigkeit und den ersten Nutzungstag (damit z. B. in den ersten Tagen keine Werbung erscheint und danach höchstens eine Vollbild-Werbung pro Tag nach dem Tagesrätsel),</li>
+  <li>Zähler für die Werbe-Häufigkeit und den ersten Nutzungstag (damit z. B. in den ersten Tagen keine Werbung erscheint und danach höchstens eine Vollbild-Werbung pro Tag nach dem Tagesrätsel): unter anderem die Zahl der Wörter seit der letzten Werbung in Ihrer Kette und die Zeitpunkte der letzten Werbungen (für den Mindestabstand und die Grenze pro Stunde),</li>
+  <li>bei Werbefrei-Käufern die Zahl der übrigen Tipps bis zum nächsten Rastplatz.</li>
   <li>ob und wann Sie nach Erinnerungen oder einer Bewertung gefragt wurden (damit diese Fragen selten kommen).</li>
 </ul>
 <p>Diese Daten verlassen Ihr Gerät nicht und werden nicht an uns übertragen. Sie werden im App-Speicher abgelegt (WebView-Speicher und iOS-Einstellungsspeicher „UserDefaults“, nur für diese App zugänglich).</p>
@@ -106,7 +107,7 @@
 
 <h3>5.1 Anbieter und Platzierung</h3>
 <p>Die App finanziert sich über Werbung. Dafür nutzen wir <strong>Google AdMob</strong> und die Google-Einwilligungsplattform („User Messaging Platform“, UMP). Anbieter für Nutzer in Europa ist die <strong>Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland</strong> („Google“).</p>
-<p>Werbung erscheint nur an bestimmten Stellen: nie während eines Rätsels, nie beim Start und kein Banner. In den ersten Tagen nach dem ersten Start erscheint keine Werbung. Danach kann beim Verlassen des Ergebnisbildschirms nach dem Tagesrätsel höchstens einmal am Tag eine Vollbild-Werbung erscheinen, im Archiv höchstens nach jedem dritten gelösten Rätsel und in Ihrer Kette nur am Rastplatz, höchstens alle 20 Level. Werbevideos (für einen Tipp in Ihrer Kette, ein zusätzliches Serien-Schild oder einen weiteren Versuch im Archiv) sehen Sie nur, wenn Sie das ausdrücklich auswählen.</p>
+<p>Werbung erscheint nur an bestimmten Stellen: nie während eines Rätsels, nie beim Start und kein Banner. In den ersten Tagen nach dem ersten Start erscheint keine Werbung. Danach kann beim Verlassen des Ergebnisbildschirms nach dem Tagesrätsel höchstens einmal am Tag eine Vollbild-Werbung erscheinen, im Archiv höchstens nach jedem dritten gelösten Rätsel und in Ihrer Kette nur zwischen zwei Wörtern, nachdem Sie ein Wort gelöst haben: etwa nach jedem vierten Wort, mit mindestens 2 Minuten Abstand und höchstens 6 Vollbild-Werbungen pro Stunde. Ob gerade ein guter Moment ist, entscheidet die App auf Ihrem iPhone anhand des eben gelösten Worts (genommene Tipps, Fehlversuche, Spielzeit); diese Angaben werden nicht übertragen. Werbevideos (für einen Tipp in Ihrer Kette, ein zusätzliches Serien-Schild oder einen weiteren Versuch im Archiv) sehen Sie nur, wenn Sie das ausdrücklich auswählen.</p>
 
 <h3>5.2 Welche Daten verarbeitet werden</h3>
 <p>Wenn das Werbemodul aktiv ist, kann das Google Mobile Ads SDK nach Angaben von Google insbesondere folgende Daten erheben und an Google übertragen:</p>
@@ -122,7 +123,7 @@
 <p><strong>Zwecke:</strong> Ausspielen von Werbung, Begrenzung der Häufigkeit, Messung der Werbewirkung, Abrechnung, Betrugs- und Missbrauchserkennung und – nur mit Ihrer Einwilligung – personalisierte Werbung.</p>
 
 <h3>5.3 Einwilligungsdialog (DSGVO)</h3>
-<p>Bevor Werbung geladen wird, zeigt die App den Einwilligungsdialog von Google (zertifiziert nach dem IAB Transparency &amp; Consent Framework). Er erscheint nicht beim allerersten Start, sondern beim ersten Anlass für Werbung: wenn Sie nach dem ersten fertig gespielten Rätsel den Ergebnisbildschirm verlassen (das Einstiegsrätsel zählt nicht), am ersten Rastplatz Ihrer Kette auf „Weiter“ tippen, ein Werbevideo wählen oder die Datenschutz-Einstellungen öffnen. Ist er dabei nicht erschienen oder haben Sie die App vorher geschlossen, kann er bei einem späteren App-Start erscheinen. Dort können Sie wählen, ob und zu welchen Zwecken Google und seine Werbepartner Informationen auf Ihrem Gerät speichern oder auslesen und Daten für personalisierte Werbung nutzen dürfen. Sie können ablehnen.</p>
+<p>Bevor Werbung geladen wird, zeigt die App den Einwilligungsdialog von Google (zertifiziert nach dem IAB Transparency &amp; Consent Framework). Er erscheint nicht beim allerersten Start, sondern beim ersten Anlass für Werbung: wenn Sie nach dem ersten fertig gespielten Rätsel den Ergebnisbildschirm verlassen (das Einstiegsrätsel zählt nicht), in Ihrer Kette zum ersten Mal eine Zwischenwerbung fällig wäre, ein Werbevideo wählen oder die Datenschutz-Einstellungen öffnen. Ist er dabei nicht erschienen oder haben Sie die App vorher geschlossen, kann er bei einem späteren App-Start erscheinen. Dort können Sie wählen, ob und zu welchen Zwecken Google und seine Werbepartner Informationen auf Ihrem Gerät speichern oder auslesen und Daten für personalisierte Werbung nutzen dürfen. Sie können ablehnen.</p>
 <ul>
   <li><strong>Mit Einwilligung:</strong> personalisierte oder nicht personalisierte Werbung nach Ihrer Auswahl.</li>
   <li><strong>Wenn Sie ablehnen:</strong> Google kann eingeschränkte Werbung („Limited Ads“) ausspielen: ohne Personalisierung und ohne Speichern oder Auslesen von Kennungen auf Ihrem Gerät zu Werbezwecken; die IP-Adresse wird dabei weiterhin zur Auslieferung und Betrugserkennung verwendet.</li>
@@ -149,7 +150,9 @@
 </ul>
 
 <h3>5.8 Ohne Werbung mit „Werbefrei“</h3>
-<p>Wenn Sie „Werbefrei“ gekauft haben, startet die App das Werbemodul von Google nicht. Dann werden keine Daten an Google AdMob übertragen und kein Einwilligungsdialog angezeigt. Der Kauf ist unabhängig davon möglich, ob Sie in Werbung eingewilligt haben.</p>
+<p>Wenn Sie „Werbefrei“ gekauft haben, zeigt die App keine Vollbild-Werbung und startet das Werbemodul von Google zunächst nicht. Dann werden keine Daten an Google AdMob übertragen und kein Einwilligungsdialog angezeigt.</p>
+<p>Eine Ausnahme wählen nur Sie selbst: In Ihrer Kette haben Sie mit „Werbefrei“ 10 Tipps pro Etappe (bis zum nächsten Rastplatz). Sind diese aufgebraucht, können Sie freiwillig ein Video ansehen, um einen weiteren Tipp zu bekommen. Nur dann startet die App das Werbemodul von Google: Es erscheinen der Einwilligungsdialog (Abschnitt 5.3) und gegebenenfalls die iOS-Abfrage „App-Tracking“ (Abschnitt 5.4), und es werden die in Abschnitt 5.2 genannten Daten an Google übertragen. Vollbild-Werbung lädt die App dabei nicht. Ihre Auswahl können Sie danach unter „Einstellungen“ → „Datenschutz-Einstellungen“ ändern. Wenn Sie kein Video ansehen, bleibt es dabei, dass keine Daten an Google AdMob gehen.</p>
+<p>Der Kauf ist unabhängig davon möglich, ob Sie in Werbung eingewilligt haben.</p>
 
 <h3 id="werbung-melden">5.9 Unpassende Werbung melden</h3>
 <p>Wenn Sie eine Anzeige für unpassend halten, schreiben Sie uns bitte an <a href="mailto:kontakt@wortbruecke.com">kontakt@wortbruecke.com</a> (möglichst mit Uhrzeit und kurzer Beschreibung der Anzeige). Wir melden sie an Google und sperren sie, wenn möglich. Zur Verarbeitung Ihrer E-Mail siehe Abschnitt 9.</p>
