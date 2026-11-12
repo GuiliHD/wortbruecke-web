@@ -38,7 +38,7 @@
   <a class="zurueck" href="/">&larr; Zur Startseite</a>
 
 <h1>Datenschutzerklärung</h1>
-<p>Stand: 11. November 2026</p>
+<p>Stand: 12. November 2026</p>
 
 <p>Diese Datenschutzerklärung gilt für die iPhone-App „Wortbrücke“ (im Folgenden „App“) und für diese Webseite. Sie erklärt, welche personenbezogenen Daten verarbeitet werden, wozu und welche Rechte Sie haben.</p>
 
@@ -51,7 +51,7 @@
   <li><a href="#appstore">App Store</a></li>
   <li><a href="#werbung">Werbung (Google AdMob)</a></li>
   <li><a href="#kauf">Kauf „Werbefrei“</a></li>
-  <li><a href="#erinnerung">Tägliche Erinnerung</a></li>
+  <li><a href="#erinnerung">Erinnerungen</a></li>
   <li><a href="#teilen">Ergebnis und Fortschritt teilen</a></li>
   <li><a href="#email">„Wort melden“ und E-Mail</a></li>
   <li><a href="#bewertung">Bewertungsabfrage</a></li>
@@ -88,11 +88,12 @@
 <ul>
   <li>Spielstand laufender Rätsel (Tagesrätsel und Archiv) und Ihrer Kette (aktuelles Level), Ergebnisse gespielter Rätsel (gelöst oder nicht gelöst), mit einem Serien-Schild überbrückte Tage, Serie, Serien-Schilde, Statistik, Kalender und Urkunden,</li>
   <li>welche Wörter Sie in Ihrer Kette gefunden und welche Stempel Sie gesammelt haben (für Stempelheft und Statistik und damit sich Wörter nicht zu schnell wiederholen),</li>
-  <li>Ihre Einstellungen (z. B. Farbmodus, Papier-Farbe, Vibration, Uhrzeit der Erinnerung),</li>
+  <li>Ihre Einstellungen (z. B. Farbmodus, Papier-Farbe, Vibration, Erinnerungen an oder aus),</li>
+  <li>für die Erinnerungen (Abschnitt 7): die Uhrzeit, zu der Sie an Ihren letzten 7 Spieltagen zuerst gespielt haben, und den Tag, an dem Sie zuletzt ein Wort in Ihrer Kette gelöst haben,</li>
   <li>ob Sie „Werbefrei“ gekauft haben (zusätzlich fragt die App den Kaufstatus bei Apple ab, siehe Abschnitt 6),</li>
   <li>Zähler für die Werbe-Häufigkeit und den ersten Nutzungstag (damit z. B. in den ersten Tagen keine Werbung erscheint und danach höchstens eine Vollbild-Werbung pro Tag nach dem Tagesrätsel): unter anderem die Zahl der Wörter seit der letzten Werbung in Ihrer Kette und die Zeitpunkte der letzten Werbungen (für den Mindestabstand und die Grenze pro Stunde),</li>
   <li>bei Werbefrei-Käufern die Zahl der übrigen Tipps bis zum nächsten Rastplatz.</li>
-  <li>ob und wann Sie nach Erinnerungen oder einer Bewertung gefragt wurden (damit diese Fragen selten kommen).</li>
+  <li>ob, wie oft und wann Sie nach Erinnerungen oder einer Bewertung gefragt wurden (damit diese Fragen selten kommen).</li>
 </ul>
 <p>Diese Daten verlassen Ihr Gerät nicht und werden nicht an uns übertragen. Sie werden im App-Speicher abgelegt (WebView-Speicher und iOS-Einstellungsspeicher „UserDefaults“, nur für diese App zugänglich).</p>
 <p class="legal"><strong>Rechtsgrundlage:</strong> Das Speichern ist für die von Ihnen gewünschte Spielfunktion unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG); die Verarbeitung dient der Bereitstellung der App (Art. 6 Abs. 1 lit. b DSGVO).</p>
@@ -162,9 +163,17 @@
 <p>Von Apple erhalten wir zur Abrechnung zusammengefasste Verkaufsberichte (z. B. Anzahl der Käufe pro Land), aber keine Angaben, die Sie persönlich identifizieren.</p>
 <p class="legal"><strong>Rechtsgrundlage:</strong> Erfüllung des Kaufvertrags (Art. 6 Abs. 1 lit. b DSGVO), gesetzliche Aufbewahrungspflichten für Abrechnungsunterlagen (Art. 6 Abs. 1 lit. c DSGVO).</p>
 
-<h2 id="erinnerung">7. Tägliche Erinnerung (Mitteilungen)</h2>
-<p>Auf Wunsch erinnert Sie die App einmal am Tag an das neue Rätsel (Standard 19:00 Uhr, in den Einstellungen änderbar). Wenn Ihre Serie sonst reißen würde, kann um 21:30 Uhr eine zweite Erinnerung kommen. Die App fragt zuerst selbst, ob Sie Erinnerungen möchten, und erst danach erscheint die iOS-Abfrage „Mitteilungen“.</p>
-<p>Die Erinnerungen werden <strong>lokal auf Ihrem iPhone</strong> geplant und angezeigt („lokale Mitteilungen“). Es wird kein Mitteilungsdienst (Push-Server) genutzt, und es werden dafür keine Daten an uns oder Dritte übertragen. Die gewählte Uhrzeit bleibt auf dem Gerät.</p>
+<h2 id="erinnerung">7. Erinnerungen (Mitteilungen)</h2>
+<p>Auf Wunsch erinnert Sie die App an das neue Rätsel. Sie fragt nicht beim ersten Start, sondern erst, nachdem Sie Ihr erstes Tagesrätsel oder das dritte Wort Ihrer Kette gelöst haben. Zuerst fragt die App selbst; erst wenn Sie „Ja“ wählen, erscheint die iOS-Abfrage „Mitteilungen“. Bei „Nicht jetzt“ fragt die App frühestens 3 Tage später wieder, insgesamt höchstens dreimal.</p>
+<p>Es gibt höchstens 2 Erinnerungen am Tag und keine zwischen 21:45 Uhr und 8:00 Uhr:</p>
+<ul>
+  <li>das Tagesrätsel, wenn Sie es an dem Tag noch nicht gelöst haben,</li>
+  <li>um 21:30 Uhr, wenn Ihre Serie (ab 2 Tagen) sonst reißen würde,</li>
+  <li>einmal Ihre Kette, wenn Sie dort 2 Tage nicht gespielt haben,</li>
+  <li>je eine nach 3, 7 und 14 Tagen, in denen Sie die App nicht geöffnet haben; danach keine mehr, bis Sie die App wieder öffnen.</li>
+</ul>
+<p>Die Uhrzeit stellen Sie nicht selbst ein. Die App lernt sie aus Ihren Spielzeiten: Sie merkt sich für Ihre letzten 7 Spieltage, wann Sie zuerst gespielt haben, und plant die Erinnerung etwas davor, zwischen 8:00 und 21:00 Uhr. Solange es dazu keine Angaben gibt, kommt sie um 19:00 Uhr. Öffnen Sie die App nach mehreren Erinnerungen nicht, erinnert die App seltener an das Tagesrätsel.</p>
+<p>Die Erinnerungen werden <strong>lokal auf Ihrem iPhone</strong> geplant und angezeigt („lokale Mitteilungen“). Es wird kein Mitteilungsdienst (Push-Server) genutzt, und es werden dafür keine Daten an uns oder Dritte übertragen. Auch die Spielzeiten, aus denen die App die Uhrzeit lernt, und die übrigen Angaben dafür (Abschnitt 3) bleiben auf dem Gerät; ältere Spielzeiten werden laufend überschrieben.</p>
 <p>Abschalten: in der App unter „Einstellungen“ oder in iOS unter Einstellungen → Mitteilungen → Wortbrücke.</p>
 <p class="legal"><strong>Rechtsgrundlage:</strong> Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG), jederzeit widerrufbar wie beschrieben.</p>
 
