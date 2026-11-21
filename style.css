@@ -69,6 +69,11 @@ main{display:block}
 .appstore-text small{font-size:.8rem;font-weight:600;opacity:.9}
 .appstore-text strong{font-family:var(--f-kopf);font-size:1.3rem}
 .appstore.bald{cursor:default}
+.badge{display:inline-block;line-height:0;border-radius:.6rem;transition:transform 160ms ease-out}
+.badge img{height:3.25rem;width:auto}
+.badge:hover{transform:translateY(-1px)}
+.badge:active{transform:scale(.97)}
+.badge:focus-visible{outline:3px solid var(--tinte);outline-offset:3px}
 .appstore.bald:hover{transform:none}
 
 .hero-bild{position:relative;justify-self:center;width:min(17rem,72vw)}
