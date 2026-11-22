@@ -38,7 +38,7 @@
   <a class="zurueck" href="/">&larr; Zur Startseite</a>
 
 <h1>Datenschutzerklärung</h1>
-<p>Stand: 20. November 2026</p>
+<p>Stand: 22. November 2026</p>
 
 <p>Diese Datenschutzerklärung gilt für die iPhone-App „Wortbrücke“ (im Folgenden „App“) und für diese Webseite. Sie erklärt, welche personenbezogenen Daten verarbeitet werden, wozu und welche Rechte Sie haben.</p>
 
@@ -65,7 +65,7 @@
 
 <h2 id="kurz">1. Kurz zusammengefasst</h2>
 <ul>
-  <li>Wortbrücke braucht <strong>kein Konto</strong>. Einen Server nutzen wir nur für geteilte Links (teilen.wortbruecke.com, Abschnitt 8); er speichert nichts.</li>
+  <li>Wortbrücke braucht <strong>kein Konto</strong>. Einen Server nutzen wir nur für geteilte Links (teilen.wortbruecke.com, Abschnitt 8); er speichert keine Spiel- oder Besucherdaten (nur fertige Vorschaubilder im Zwischenspeicher).</li>
   <li>Spielstand, Serie, Statistik, Kalender, Urkunden und Einstellungen werden <strong>nur auf Ihrem iPhone</strong> gespeichert. Wir erhalten diese Daten nicht.</li>
   <li>Erinnerungen sind <strong>lokale Mitteilungen</strong>, die Ihr iPhone selbst plant. Es gibt keinen Mitteilungsserver.</li>
   <li>Die App zeigt Werbung von <strong>Google AdMob</strong>. Dabei werden Daten an Google übertragen. Ob die Werbung personalisiert wird, entscheiden Sie selbst im Einwilligungsdialog und in der iOS-Abfrage „App-Tracking“.</li>
@@ -178,11 +178,40 @@
 <p class="legal"><strong>Rechtsgrundlage:</strong> Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG), jederzeit widerrufbar wie beschrieben.</p>
 
 <h2 id="teilen">8. Ergebnis teilen, Fortschritt teilen und "Freund fragen"</h2>
+
+<h3>8.1 Ergebnis teilen (Bild)</h3>
 <p>Wenn Sie "Teilen" antippen, erzeugt die App auf Ihrem iPhone ein Ergebnisbild und einen kurzen Text (Rätselnummer, Ergebnis als Kästchen, beim Tagesrätsel Ihre Serie und einen Link auf wortbruecke.com - ohne Lösung und ohne Namen). Das Bild wird dafür kurz im Zwischenspeicher der App abgelegt. Dann öffnet sich das Teilen-Menü von iOS. An wen und über welche App Sie teilen, entscheiden Sie; für die weitere Verarbeitung ist der jeweilige Dienst (z. B. Ihr Messenger) verantwortlich. Wir erhalten dabei nichts.</p>
-<p>"Fortschritt teilen" (am Rastplatz oder in der Statistik) und "Freund fragen" (in Ihrer Kette) erzeugen auf Ihrem iPhone einen Text mit einem Link auf teilen.wortbruecke.com. Der Link enthält nur wenige Angaben zum Spiel: beim Fortschritt erreichtes Level, Tage der Serie und Anzahl der Stempel; bei "Freund fragen" das Anfangswort, eine Kurzkennung der gesuchten Verbindung (nicht die Lösung) und welche Buchstaben schon aufgedeckt sind. Er enthält keinen Namen und keine Geräte- oder Werbekennung. Die App sendet beim Teilen selbst nichts an uns; Sie entscheiden über das Teilen-Menü von iOS, wem Sie den Link schicken.</p>
-<p>Wird ein solcher Link geöffnet oder von einem Messenger für eine Vorschau abgerufen, erzeugt unser Server daraus eine Vorschau bzw. eine kleine Seite mit dem Rätsel, auf der man raten kann. Dabei werden technisch notwendig die IP-Adresse und die Browser-Kennung des abrufenden Geräts verarbeitet, um die Seite auszuliefern; ein Rateversuch wird nur geprüft. Wir speichern weder die Links noch Rateversuche noch Zugriffsdaten, setzen keine Cookies und führen keine Zugriffsprotokolle. Ist Wortbrücke installiert, kann iOS den Link direkt in der App öffnen; dafür ruft iOS über Apple eine Zuordnungsdatei von teilen.wortbruecke.com ab.</p>
-<p>Der Server läuft bei <strong>Cloudflare, Inc.</strong>, 101 Townsend St., San Francisco, CA 94107, USA ("Cloudflare Workers"), als Auftragsverarbeiter (Art. 28 DSGVO). Cloudflare kann zum Schutz vor Angriffen kurzzeitig Verbindungsdaten verarbeiten. Dabei können Daten in die USA übermittelt werden; Cloudflare ist nach dem EU-US Data Privacy Framework zertifiziert (Art. 45 DSGVO). Datenschutzerklärung von Cloudflare: <a href="https://www.cloudflare.com/de-de/privacypolicy/">cloudflare.com/de-de/privacypolicy</a></p>
-<p class="legal"><strong>Rechtsgrundlage:</strong> für Sie als Teilende/n die von Ihnen gewünschte Teilen-Funktion (Art. 6 Abs. 1 lit. b DSGVO); für Empfängerinnen und Empfänger unser berechtigtes Interesse, geteilte Links mit Vorschau anzeigen zu können (Art. 6 Abs. 1 lit. f DSGVO).</p>
+
+<h3>8.2 Links auf teilen.wortbruecke.com</h3>
+<p>"Fortschritt teilen" (am Rastplatz oder in der Statistik) und "Freund fragen" (in Ihrer Kette) erzeugen auf Ihrem iPhone einen Text mit einem Link auf teilen.wortbruecke.com. Der Link enthält nur wenige Angaben zum Spiel:</p>
+<ul>
+  <li><strong>Fortschritt teilen:</strong> erreichtes Level, Tage der Serie und Anzahl der Stempel (dazu ein Prüfzeichen).</li>
+  <li><strong>Freund fragen:</strong> das Anfangswort, eine Kurzkennung der gesuchten Verbindung und welche Buchstaben schon aufgedeckt sind.</li>
+</ul>
+<p>Der Link enthält keinen Namen, keine Geräte- und keine Werbekennung. Die App sendet beim Teilen selbst nichts an uns: Sie wählen im Teilen-Menü von iOS, wem Sie den Link schicken.</p>
+
+<h3>8.3 Was beim Öffnen eines Links verarbeitet wird</h3>
+<p>Wird ein Link geöffnet oder von einem Messenger (z. B. WhatsApp, iMessage) für eine Vorschau abgerufen, antwortet unser Server auf teilen.wortbruecke.com. Dabei gilt:</p>
+<ul>
+  <li><strong>Technisch notwendige Daten:</strong> Der Server erhält die Adresse des Links, die IP-Adresse und die Browser-Kennung (User-Agent) des abrufenden Geräts bzw. Messenger-Servers. Die IP-Adresse wird gebraucht, um die Antwort zurückzuschicken. Unser Programm liest sie nicht aus und speichert sie nicht. Die Browser-Kennung wertet es nur aus, um Vorschau-Abrufe von Messengern von Menschen zu unterscheiden.</li>
+  <li><strong>Fortschritt-Link:</strong> Messenger erhalten eine kleine Seite mit Vorschaubild (Level, Serie, Stempel). Menschen werden sofort weitergeleitet: vom iPhone zum App Store, sonst zu wortbruecke.com.</li>
+  <li><strong>"Freund fragen"-Link:</strong> Es erscheint eine kleine Seite mit dem Rätsel ("Welches Wort fehlt?"). Wer rät, schickt seine eingegebenen Buchstaben und den Versuchszähler an den Server. Der Server prüft den Versuch, zeigt das Ergebnis und verwirft ihn. Die Zahl der Versuche (höchstens 5) zählt die Seite selbst, nicht der Server.</li>
+  <li><strong>Öffnen in der App:</strong> Ist Wortbrücke installiert, kann iOS den Link direkt in der App öffnen ("Universal Links"). Dafür ruft iOS die Datei apple-app-site-association von teilen.wortbruecke.com ab; das geschieht durch iOS, nicht durch die App. Wie Apple dabei vorgeht, bestimmt Apple.</li>
+  <li><strong>Kein Tracking:</strong> Der Server setzt keine Cookies, nutzt keinen lokalen Speicher im Browser, bindet keine Analyse-, Werbe- oder sonstigen Dienste Dritter ein und lädt keine Inhalte von fremden Servern. Er verknüpft Aufrufe nicht mit Personen oder anderen Daten. Die Seiten sind für Suchmaschinen gesperrt (noindex).</li>
+  <li><strong>Protokolle:</strong> Unser Programm schreibt keine Zugriffsprotokolle, und die Protokoll- und Beobachtungsfunktion des Workers ist in unserer Konfiguration abgeschaltet. Als Betreiber der technischen Infrastruktur kann Cloudflare dennoch eigene technische Protokolle und Statistiken führen (z. B. zur Sicherheit und zum Betrieb); Einzelheiten stehen in der Datenschutzerklärung von Cloudflare (Abschnitt 8.5).</li>
+</ul>
+
+<h3>8.4 Zwischenspeicher für Vorschaubilder</h3>
+<p>Damit nicht jedes Vorschaubild bei jedem Abruf neu gezeichnet werden muss, legt der Server fertige Bilder im Zwischenspeicher (Cache) von Cloudflare ab. Der Eintrag ist an die Link-Adresse gebunden und besteht nur aus den oben genannten Spielangaben (Level, Serie, Stempel bzw. Rätsel). IP-Adressen, Browser-Kennungen oder andere Angaben zu Besucherinnen und Besuchern sind darin nicht enthalten. Das Bild wird mit einer Gültigkeit von bis zu einem Jahr ausgeliefert; wie lange Cloudflare einen Eintrag tatsächlich vorhält, bestimmt Cloudflare, und Einträge können früher entfernt werden. Die Seiten selbst (Rätsel, Vorschau) können in Browsern und Messengern kurz zwischengespeichert werden (bis zu 1 Stunde bzw. 1 Tag).</p>
+
+<h3>8.5 Dienstleister Cloudflare und Übermittlung in Drittländer</h3>
+<p>Der Server läuft als "Cloudflare Worker" bei <strong>Cloudflare, Inc.</strong>, 101 Townsend St., San Francisco, CA 94107, USA. Cloudflare verarbeitet die oben genannten Daten in unserem Auftrag (Art. 28 DSGVO); die Bedingungen dafür enthält der Vertrag zur Auftragsverarbeitung von Cloudflare (<a href="https://www.cloudflare.com/cloudflare-customer-dpa/">cloudflare.com/cloudflare-customer-dpa</a>). Unsere Domain wortbruecke.com wird ebenfalls bei Cloudflare verwaltet (Namensauflösung); die Webseite selbst wird weiterhin bei GitHub Pages bereitgestellt (Abschnitt 11).</p>
+<p>Cloudflare führt Anfragen am Standort aus, der dem Aufrufenden am nächsten ist; wir haben keinen Standort auf die EU beschränkt. Daten können dabei auch in die USA und andere Länder außerhalb der EU gelangen. Cloudflare, Inc. ist nach dem EU-US Data Privacy Framework zertifiziert (im Verzeichnis des US-Handelsministeriums mit dem Status "aktiv" geführt); für die Übermittlung in die USA gilt damit der Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO). Zusätzlich enthält der Vertrag zur Auftragsverarbeitung die EU-Standardvertragsklauseln (Art. 46 DSGVO) für Übermittlungen, die nicht unter das Framework fallen. Zum Schutz vor Angriffen kann Cloudflare kurzzeitig Verbindungsdaten verarbeiten. Datenschutzerklärung von Cloudflare: <a href="https://www.cloudflare.com/de-de/privacypolicy/">cloudflare.com/de-de/privacypolicy</a></p>
+
+<h3>8.6 Speicherdauer und Weitergabe</h3>
+<p>Wir speichern keine Inhalte der Links, keine Rateversuche und keine Angaben zu Besucherinnen und Besuchern; es gibt keine Datenbank. Die einzige Speicherung durch unseren Server ist der Zwischenspeicher für Vorschaubilder (Abschnitt 8.4). Zur Speicherdauer bei Cloudflare siehe Abschnitte 8.3 und 8.4. Wir geben keine Daten an Dritte weiter; Cloudflare ist als unser Auftragsverarbeiter eingebunden. Die Daten werden nicht für Werbung, Analyse oder Profile genutzt.</p>
+
+<p class="legal"><strong>Rechtsgrundlage:</strong> für Sie als Teilende/n die von Ihnen gewünschte Teilen-Funktion (Art. 6 Abs. 1 lit. b DSGVO); für Empfängerinnen und Empfänger sowie Vorschau-Abrufe unser berechtigtes Interesse, geteilte Links mit Vorschau und Rätselseite sicher auszuliefern (Art. 6 Abs. 1 lit. f DSGVO). Auf Ihrem Gerät wird durch den Server nichts gespeichert oder ausgelesen, daher ist hierfür keine Einwilligung nach § 25 TDDDG nötig. Sie können der Verarbeitung auf Grundlage berechtigter Interessen widersprechen (Abschnitt 14).</p>
 
 <h2 id="email">9. „Wort melden“ und Kontakt per E-Mail</h2>
 <p>Wenn Sie nach einem abgelehnten Wort „Wort melden“ antippen, öffnet die App Ihre E-Mail-App mit einer vorausgefüllten Nachricht an uns: Rätselnummer, betroffene Lücke, Ihr eingegebenes Wort und die App-Version. In Ihrer Kette heißt der Knopf „Das Wort sollte zählen“; die Nachricht enthält dort Ihr Level, das letzte Wort der Kette, Ihr eingegebenes Wort, die App-Version und die Angabe „iPhone“. Sie sehen die Nachricht vor dem Senden und entscheiden selbst, ob Sie sie abschicken. Die App selbst überträgt nichts.</p>
