@@ -8,8 +8,8 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#F6F0E1" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#191B22" media="(prefers-color-scheme: dark)">
-<title>Wortbrücke – Wortketten-Spiel und Tagesrätsel für das iPhone</title>
-<meta name="description" content="Baue deine Kette aus deutschen Wörtern: Jedes Wort ist ein Level. Dazu jeden Tag ein Tagesrätsel. Ruhig, ohne Anmeldung, auch offline. Kostenlos für das iPhone.">
+<title>Wortbrücke – Wortspiel &amp; Worträtsel App für das iPhone</title>
+<meta name="description" content="Wortbrücke ist ein deutsches Wortspiel fürs iPhone: Wortketten bauen und täglich ein Worträtsel lösen. Kostenlose Rätsel App, ohne Anmeldung, auch offline.">
 <link rel="canonical" href="https://wortbruecke.com/">
 
 <!-- Open Graph (Vorschau beim Teilen in Messengern und sozialen Netzen) -->
@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="Wortbrücke">
 <meta property="og:locale" content="de_DE">
 <meta property="og:url" content="https://wortbruecke.com/">
-<meta property="og:title" content="Wortbrücke – Das Wortketten-Spiel">
+<meta property="og:title" content="Wortbrücke – Wortspiel &amp; Worträtsel App für das iPhone">
 <meta property="og:description" content="Baue deine Kette Wort für Wort: Jedes Wort ist ein Level, falsche Versuche kosten nichts. Dazu jeden Tag ein Tagesrätsel, für alle gleich.">
 <meta property="og:image" content="https://wortbruecke.com/bilder/og-bild.png">
 <meta property="og:image:width" content="1200">
@@ -36,11 +36,20 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": "https://wortbruecke.com/#organization",
+      "name": "Wortbrücke",
+      "url": "https://wortbruecke.com/",
+      "logo": "https://wortbruecke.com/bilder/icon-512.png",
+      "email": "kontakt@wortbruecke.com"
+    },
+    {
       "@type": "WebSite",
       "@id": "https://wortbruecke.com/#website",
       "url": "https://wortbruecke.com/",
       "name": "Wortbrücke",
-      "inLanguage": "de-DE"
+      "inLanguage": "de-DE",
+      "publisher": { "@id": "https://wortbruecke.com/#organization" }
     },
     {
       "@type": "MobileApplication",
@@ -50,7 +59,11 @@
       "description": "Wortketten-Spiel für das iPhone: Baue deine Kette aus deutschen zusammengesetzten Wörtern, Level für Level, dazu jeden Tag ein Tagesrätsel. Ohne Anmeldung, auch offline.",
       "applicationCategory": "GameApplication",
       "applicationSubCategory": "Wortspiel",
-      "operatingSystem": "iOS",
+      "operatingSystem": "iOS 15.0 oder neuer",
+      "downloadUrl": "https://apps.apple.com/de/app/wortbr%C3%BCcke/id6829818242",
+      "installUrl": "https://apps.apple.com/de/app/wortbr%C3%BCcke/id6829818242",
+      "sameAs": "https://apps.apple.com/de/app/wortbr%C3%BCcke/id6829818242",
+      "publisher": { "@id": "https://wortbruecke.com/#organization" },
       "inLanguage": "de",
       "image": "https://wortbruecke.com/bilder/icon-512.png",
       "screenshot": [
@@ -91,7 +104,7 @@
 <!-- ============ HERO ============ -->
 <section class="hero" aria-labelledby="hero-titel">
   <div class="hero-text">
-    <p class="dachzeile">Das Wortketten-Spiel</p>
+    <p class="dachzeile">Wortspiel und Worträtsel für das iPhone</p>
     <h1 id="hero-titel">Wortbrücke</h1>
     <p class="lead">Baue deine Kette aus deutschen Wörtern, Level für Level. Falsche Versuche kosten nichts. Dazu jeden Tag ein Tagesrätsel, für alle gleich.</p>
 
@@ -233,7 +246,7 @@
 <section class="abschnitt" id="bilder" aria-labelledby="bilder-titel">
   <div class="abschnitt-kopf">
     <p class="dachzeile">Einblicke</p>
-    <h2 id="bilder-titel">So sieht Wortbrücke aus</h2>
+    <h2 id="bilder-titel">So sieht die Rätsel App Wortbrücke aus</h2>
   </div>
   <div class="galerie">
     <figure class="telefon klein" data-bild>
@@ -261,6 +274,10 @@
     <h2 id="fragen-titel">Gut zu wissen</h2>
   </div>
   <div class="faq">
+    <details>
+      <summary>Was ist Wortbrücke?</summary>
+      <p>Wortbrücke ist ein deutsches Wortspiel als Rätsel App für das iPhone. Du baust eine Kette aus zusammengesetzten Wörtern und löst jeden Tag ein Worträtsel, das für alle gleich ist. Mehr Antworten findest du auf der Seite <a href="/support.html">Hilfe und Support</a>.</p>
+    </details>
     <details>
       <summary>Was kostet Wortbrücke?</summary>
       <p>Die App ist kostenlos und enthält Werbung. Mit dem einmaligen Kauf „Werbefrei“ für 3,99 € entfällt die Vollbild-Werbung, dazu gibt es 10 Tipps pro Etappe ohne Video und weitere Papier-Farben. Der Kauf gilt dauerhaft und lässt sich in den Einstellungen wiederherstellen.</p>
